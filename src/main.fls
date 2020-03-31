@@ -1,4 +1,4 @@
-PWD C:/Users/Laurence/Documents/CV/Moderncv Oldstyle
+PWD C:/Users/Laurence/Documents/CV/src
 INPUT c:/texlive/2019/texmf.cnf
 INPUT c:/texlive/2019/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
@@ -98,6 +98,14 @@ INPUT c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 INPUT c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 INPUT moderncviconsmarvosym.sty
 INPUT moderncviconsmarvosym.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/fontawesome/fontawesome.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/fontawesome/fontawesome.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-generic.tex
+INPUT c:/texlive/2019/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-generic.tex
+INPUT c:/texlive/2019/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-pdftex.tex
+INPUT c:/texlive/2019/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-pdftex.tex
 INPUT c:/texlive/2019/texmf-dist/tex/latex/marvosym/umvs.fd
 INPUT c:/texlive/2019/texmf-dist/tex/latex/marvosym/umvs.fd
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/marvosym/umvs.tfm
@@ -111,8 +119,6 @@ INPUT c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 INPUT c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 INPUT c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 INPUT c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ifvtex.sty
-INPUT c:/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-INPUT c:/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT c:/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
@@ -168,6 +174,9 @@ INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmss17.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT c:/texlive/2019/texmf-dist/tex/latex/microtype/mt-mvs.cfg
 INPUT c:/texlive/2019/texmf-dist/tex/latex/microtype/mt-mvs.cfg
+INPUT c:/texlive/2019/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd
+INPUT c:/texlive/2019/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/fontawesome/FontAwesome--fontawesometwo.tfm
 INPUT c:/texlive/2019/texmf-dist/tex/latex/lm/ot1lmr.fd
 INPUT c:/texlive/2019/texmf-dist/tex/latex/lm/ot1lmr.fd
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmr10.tfm
@@ -204,6 +213,8 @@ INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
 INPUT c:/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
+INPUT c:/texlive/2019/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss17.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss8.pfb
