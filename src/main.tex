@@ -1,0 +1,139 @@
+%Version 1, December 2017, Laurence Stant
+
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                           % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\patchcmd{\maketitle}
+{\hfil}
+{\hspace*{0.15\textwidth}}
+{}
+{}
+\patchcmd{\maketitle}
+{\setlength{\maketitlewidth}{\textwidth}}
+{\setlength{\maketitlewidth}{\textwidth}}
+{}
+{}
+\patchcmd{\maketitle}
+{\\[2.5em]}
+{\hskip 22pt\raisebox{-1.6cm}{
+%		\framebox{
+			\includegraphics[width=\@photowidth]{\@photo}
+%		}
+	}\\[2.5em]}
+{}
+{}
+
+% personal data
+\name{Laurence}{Stant}
+\title{Curriculum Vit\ae}                               % optional, remove / comment the line if not wanted
+\address{16 Usk Way}{Didcot, OX11 7SQ}{United Kingdom}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+44~(0)7754~393379}                   % optional, remove / comment the line if not wanted
+\email{laurence.stant@diamond.ac.uk}                               % optional, remove / comment the line if not wanted
+%\homepage{www.laurencestant.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0pt]{stant}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+
+\lfoot{Laurence Stant~|~\mobilephonesymbol +44~(0)7754~393379~|~\emailsymbol laurence.stant@diamond.ac.uk}
+
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2014--2019}{PhD in Microwave Engineering}{University of Surrey, NPL}{Guildford, UK}{}{Measurement Uncertainty in Nonlinear Behavioural Models of Microwave and Millimetre-Wave Amplifiers.}
+\cventry{2010--2014}{BSc.(Hons) Physics with Nuclear Astrophysics}{University of Surrey}{Guildford, UK}{\textit{Upper Second Class}}{Industrial placement at National Instruments UK and Ireland.}  % arguments 3 to 6 can be left empty
+
+\section{Experience}
+\cventry{Apr 2018--Present}{RF Engineer}{Diamond Light Source Ltd.}{Harwell, UK}{}{Member of the group responsible for continuous operation of the RF systems supporting a 3 GeV synchrotron (8 inductive output tubes (IOTs) @ 60~kW) and injector accelerators (two 3~GHz klystrons @ 20~MW, one 60~kW IOT). Developing and commissioning new FPGA digital low-level RF control systems, RF cavities (normal- and super-conducting). Procurement, installation and commissioning of 80~kW solid-state power amplifiers.}
+\cventry{Apr 2017--May 2017}{Guest Researcher}{National Institute for Standards and Technology (NIST)}{Boulder, CO, USA}{}{Nonlinear microwave characterisation and futher development of a software uncertainty framework.}
+\cventry{Aug 2014--Oct 2014}{Satellite Engineering Intern}{Satellite Applications Catapult}{Harwell, UK}{}{Full mechanical, electronic and firmware design and development of a picosatellite kit for educational purposes. Delivery of two-day course at British embassy in Warsaw during UKTI trip to Poland in December 2014.}
+\cventry{July 2013--Sept 2013}{Beamline Scientist Intern}{Diamond Light Source Ltd.}{Harwell, UK}{}{Development of a closed-cycle humidity chamber for the I22 beamline. I also added EPICS control system integration to an existing pressure cell controlled using LabVIEW, including prototyping interfaces using EDM.}
+\cventry{July 2012--June 2013}{Applications Engineer Intern}{National Instruments UK and Ireland}{Newbury, UK}{}{Providing technical support and advice to customers throughout the UK in embedded systems design and automated test, using LabVIEW and other National Instruments products. First intern to obtain CLD certification, write keynote demonstration and present at NIDays conference. I have used this experience to assist controls engineers when visiting science facilities such as HFML in the Netherlands and ISIS at RAL.}
+\cventry{July 2011--Sept 2011}{Instrumentation Scientist Intern}{Met Office}{Exeter, UK}{}{Design of a cavity icing system for a state-of-the-art ice nuclei counter, using LabVIEW as control software. I also discovered a manufacturing issue in the proposed main drift chamber and worked on a new design for the remainder of my tenure.}
+
+\section{Certifications and Courses}
+\cvitem{National Physical Laboratory}{Level 1 Instrumentation \& Sensors Course}
+\cvitem{National Instruments}{Certified LabVIEW Developer (expired 2016)}
+%\cvitem{IPAF}{Category 3B (cherry picker) license (expired)}
+%\cvitem{Production Services Association}{Safety passport}
+%\cvitem{Stage Electrics}{Power in the Entertainment Industry}
+\cvitem{Coursera}{The Data Scientist's Toolbox}
+\cvitem{Radio Society of Great Britain}{Full amateur license}
+
+\section{Organisations}
+\cvitem{IET}{Full Member, working towards CEng}
+\cvitem{IEEE}{Full Member, Microwave Theory and Techniques Society}
+\cvitem{Radio Society of Great Britain}{Registered assessor, and former club callsign holder}
+%\cvdoubleitem{IOP}{Associate member}{UK Microwave Group}{Member}
+
+\section{Languages}
+\cvdoubleitem{English}{Native}{French}{Basic}
+\cvitemwithcomment{German}{Basic}{}
+
+\section{Skills}
+Electronic engineering, practical problem solving, technical writing and presenting, teamwork, RF design and simulation, programming (Python, Javascript, C++, VB.NET, R, VHDL), Linux systems administration, \LaTeX, web development, equipment maintenance and repair, power distribution, fabrication and prototyping, research, embedded systems, basic FPGA and SDR programming.
+
+\section{Interests}
+Open source hardware and software, STEM outreach, internet-of-things, amateur radio, live music and events, sailing, high-power model rocketry, real ale/home-brewing, steam railways.
+
+\section{References}
+\cvdoubleitem{Dr. Chris Christou}{\newline \emph{RF Group Leader}\newline Diamond Light Source\newline Harwell Science and Innovation Campus\newline Fermi Avenue, Didcot, OX11 0DE\newline Email: chris.christou@diamond.ac.uk\newline Telephone: +44~(0)1235~448072}{Prof. Nick Ridler}{\newline \emph{Head of Science, EETL Dept.}\newline National Physical Laboratory\newline Hampton Road, Teddington, TW11 0LW\newline Email: nick.ridler@npl.co.uk\newline Telephone: +44~(0)2089~773222}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{IEEEtran}
+\newpage
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template.tex'.
